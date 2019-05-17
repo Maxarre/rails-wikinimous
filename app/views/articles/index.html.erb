@@ -1,0 +1,12 @@
+<h1>Wikinimous</h1>
+
+<%= link_to "New Article", new_path %>
+
+<% @articles.each do |article| %>
+<ul>
+  <li>
+    <p><%= link_to article.title, article %></p>
+    <p><%= article.content %></p>
+  </li>
+</ul>
+<% end %>
